@@ -94,8 +94,9 @@ header{
     /*header*/
     .header_main{
         width: 370px;
-        margin: auto;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .inp_head{
