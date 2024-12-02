@@ -749,6 +749,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .container1_foot{
@@ -805,6 +806,74 @@ header{
 
 .img4_foot{
     margin-bottom: 4px;
+}
+
+@media(max-width:500px){
+    /*footer*/
+
+    .head_foot{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container1_foot{
+        width: 330px;
+        height: 86px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cont1_foot{
+        width: 315px;
+        height: 46px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .min_cont_foot{
+        width: 53px;
+        height: 46px;
+    }
+    
+    .image_foot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text1_foot{
+        font-family: "robo";
+        font-size: 14px;
+        color: rgba(9, 29, 158, 1);
+        margin-top: 5px;
+    }
+    
+    .text_foot{
+        font-family: "robo";
+        font-size: 14px;
+        color: rgba(69, 69, 69, 1);
+    }
+    
+    .img1_foot{
+        margin-bottom: 4px;
+    }
+    
+    .img2_foot{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .img3_foot{
+        margin-bottom: 5px;
+    }
+    
+    .img4_foot{
+        margin-bottom: 4px;
+    }
+    
 }
 
 
