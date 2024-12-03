@@ -654,6 +654,9 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: sticky;
+        bottom: 0;
+        background-color: white;
     }
     
     .container1_foot{
