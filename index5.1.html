@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style5.1.css">
+</head>
+<body>
+    <div class="section1">
+        <div class="container1_sec1">
+            <a href="index.html" class="a1">Главная /</a>
+            <a href="index4.html" class="a1">Корзина /</a>
+            <a href="index5.html" class="a2">Оформление заказа</a>
+            <p class="text1_sec1">Оформление заказа</p>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="container1_sec2">
+            <div class="input1_sec2">
+                <select name="option1" id="inp1_option1" class="inp1_sec2">
+                    <option value="">Курьер</option>
+                    <option value="petersburg">Самовывоз</option>
+                </select>
+            </div>
+            <p class="text1_sec2">Контактные данные</p>
+            <div class="contact_inputs_sec2">
+                <input type="text" name="" id="inp3" class="inp3_sec2" placeholder="Имя*">
+                <input type="text" name="" id="inp4" class="inp3_sec2" placeholder="Телефон*">
+                <input type="text" name="" id="" class="inp3_sec2" placeholder="Email">
+            </div>
+            <p class="text1_sec2">Адрес доставки</p>
+            <div class="contact_inputs_sec2">
+                <input type="text" name="" id="inp3" class="inp3_sec2" placeholder="Город*">
+                <input type="text" name="" id="inp4" class="inp3_sec2" placeholder="Улица*">
+                <div class="inputs_dom_ul_sec2">
+                    <input type="text"class="inp33_sec2" placeholder="Дом*">
+                    <input type="text"class="inp33_sec2" placeholder="Квартира*">
+                </div>
+            </div>
+            <p class="text1_sec2">Данные по доставке</p>
+            <div class="data_dostavki">
+                <p class="text_dat_dost">Дата доставки</p>
+                <div class="cont_data_dost_sec2">
+                    <input type="text"class="inp333_sec2" placeholder="23.08, ср">
+                    <input type="text"class="inp333_sec2" placeholder="01.09, пт">
+                </div>
+                <p class="text_dat_dost">Время</p>
+                <div class="cont_data_dost_sec2">
+                    <select name="option1" id="inp1_option1" class="inp11_sec2">
+                        <option value="">13:00 - 16:00</option>
+                        <option value="petersburg">16:00 - 20:00</option>
+                    </select>
+                </div>
+                <p class="text_dat_dost">Пожелания к доставке</p>
+                <input type="text"class="inp3333_sec2" placeholder="Сообщение">
+                
+            </div>
+            <p class="text1_sec2">Оплата</p>
+            <div class="oplata">
+                <p class="text2_sec2">Оплата только онлайн</p>
+                <div class="image1_sec2">
+                    <img src="./assets/images/5str/воскл.svg" alt="" class="img1_sec2">
+                </div>
+            </div>
+            <div class="karta_sbp_sec2">
+                <div class="karta">
+                    <p class="text2_sec2">Новая карта</p>
+                    <div class="image1_sec2">
+                        <img src="./assets/images/5str/icon plus.svg" alt="" class="img1_sec2">
+                    </div>
+                </div>
+                <div class="sbp">
+                    <div class="image1_sec2">
+                        <img src="./assets/images/5str/сбп.svg" alt="" class="img2_sec2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr width="100%" color="#C0C0C0" size="3">
+    <div class="section3">
+        <div class="container1_sec3">
+            <p class="text1_sec3">Итого:</p>
+            <div class="price_cont_text_sec3">
+                <p class="text2_sec3">279 978 ₽</p>
+                <p class="text3_sec3">282 978 ₽</p>
+            </div>
+            <div class="cont_btn_sec3">
+                <button class="btn1_sec3" id="btn1" name="button1_sec3">Оплатить</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var address = document.querySelector('.inp2_sec2');
+    var name = document.querySelector('.inp3_sec2');
+    var namber = document.querySelector('.inp3_sec2');
+
+    address.addEventListener('input', changeBackground);
+    name.addEventListener('input', changeBackground);
+    namber.addEventListener('input', changeBackground);
+
+    function changeBackground() {
+    if (address.value !== '' && name.value !== '' && namber.value !== '') {
+        document.querySelector('button1_sec3').style.background = 'green';
+    } else {
+        document.querySelector('button1_sec3').style.background = 'red';
+    }
+    }
+</script>
+</html>

@@ -1,0 +1,338 @@
+@font-face {
+    font-family: "robo";
+    src: url(./assets/fonts/Roboto.ttf);
+}
+
+@font-face {
+    font-family: "int";
+    src: url(./assets/fonts/Inter-Regular.otf);
+}
+
+@font-face {
+    font-family: "read";
+    src: url(./assets/fonts/ReadexPro-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+/*section1*/
+.section1{
+    width: 1110px;
+    margin: auto;
+}
+
+.container1_sec1{
+    width: 1110px;
+    height: 700px;
+    margin-top: 100px;
+}
+
+.text1_sec1{
+    font-family: "robo";
+    font-size: 25px;
+    text-align: center;
+}
+
+.img1_sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1_sec1{
+    width: 299px;
+    height: 314px;
+    margin-top: 30px;
+}
+
+.two_text_sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.one_text_sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text2_sec1{
+    font-family: "robo";
+    font-size: 25px;
+}
+
+.text3_sec1{
+    font-family: "robo";
+    font-size: 25px;
+    color: rgba(117, 13, 197, 1);
+    margin-left: 20px;
+}
+
+.text4_sec1{
+    font-family: "robo";
+    font-size: 20.3px;
+    color: rgba(69, 69, 69, 1);
+}
+
+.btn1_sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.button1_sec1{
+    width: 370px;
+    height: 60px;
+    font-family: "robo";
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(9, 29, 158, 1);
+    border-radius: 8px;
+}
+
+@media(max-width:1200px){
+    .section1{
+        width: 1024px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container1_sec1{
+        width: 1024px;
+        height: 700px;
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:500px){
+    .section1{
+        width:370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container1_sec1{
+        width: 330px;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    .text1_sec1{
+        font-family: "robo";
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .img1_sec1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image1_sec1{
+        width: 229px;
+        height: 244px;
+        margin-top: 30px;
+    }
+    
+    .two_text_sec1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .one_text_sec1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .text2_sec1{
+        font-family: "robo";
+        font-size: 18px;
+    }
+    
+    .text3_sec1{
+        font-family: "robo";
+        font-size: 18px;
+        color: rgba(117, 13, 197, 1);
+        margin-left: 20px;
+    }
+    
+    .text4_sec1{
+        font-family: "robo";
+        font-size: 15px;
+        color: rgba(69, 69, 69, 1);
+    }
+    
+    .btn1_sec1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    .button1_sec1{
+        width: 267px;
+        height: 49px;
+        font-family: "robo";
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(9, 29, 158, 1);
+        border-radius: 8px;
+    }
+}
+
+/*footer*/
+
+.head_foot{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.container1_foot{
+    width: 330px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont1_foot{
+    width: 315px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.min_cont_foot{
+    width: 53px;
+    height: 46px;
+}
+
+.image_foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1_foot{
+    font-family: "robo";
+    font-size: 14px;
+    color: rgba(9, 29, 158, 1);
+    margin-top: 5px;
+}
+
+.text_foot{
+    font-family: "robo";
+    font-size: 14px;
+    color: rgba(69, 69, 69, 1);
+}
+
+.img1_foot{
+    margin-bottom: 4px;
+}
+
+.img2_foot{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img3_foot{
+    margin-bottom: 5px;
+}
+
+.img4_foot{
+    margin-bottom: 4px;
+}
+
+@media(max-width:500px){
+    /*footer*/
+
+    .head_foot{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+        background-color: white;
+    }
+    
+    .container1_foot{
+        width: 330px;
+        height: 86px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cont1_foot{
+        width: 315px;
+        height: 46px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .min_cont_foot{
+        width: 53px;
+        height: 46px;
+    }
+    
+    .image_foot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text1_foot{
+        font-family: "robo";
+        font-size: 14px;
+        color: rgba(9, 29, 158, 1);
+        margin-top: 5px;
+    }
+    
+    .text_foot{
+        font-family: "robo";
+        font-size: 14px;
+        color: rgba(69, 69, 69, 1);
+    }
+    
+    .img1_foot{
+        margin-bottom: 4px;
+    }
+    
+    .img2_foot{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .img3_foot{
+        margin-bottom: 5px;
+    }
+    
+    .img4_foot{
+        margin-bottom: 4px;
+    }
+    
+}
+
+

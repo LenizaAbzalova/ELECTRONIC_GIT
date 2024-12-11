@@ -504,7 +504,7 @@ header{
     
     .container1_sec2{
         width: 330px;
-        height: 2030px;
+        height: 2055px;
         margin-top: 0px;
         display: flex;
     }
@@ -618,6 +618,11 @@ header{
 
     .hr_for_media{
         display: block;
+    }
+    
+    .hr_for_media1{
+        display: block;
+        margin-top: 30px;
     }
 }
 
