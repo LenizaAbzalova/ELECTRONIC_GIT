@@ -18,6 +18,7 @@
             <div class="header_menu">
                 <a href="index.html" class="text_menu">Каталог</a>
                 <a href="index4.html" class="text_menu">Корзина</a>
+                <button class="bnt0_head" onclick="korzina()"></button>
                 <a href="#" class="text_menu">Профиль</a>
             </div>
         </div>
@@ -164,19 +165,19 @@
                     <div class="image_foot">
                         <a href="index.html"><img src="./assets/images/foot/icon home_blue.svg" alt="" class="img1_foot"></a>
                     </div>
-                    <a href="#" class="text1_foot">Главная</a>
+                    <a href="index.html" class="text1_foot">Главная</a>
                 </div>
                 <div class="min_cont_foot">
                     <div class="image_foot">
                         <a href="index2.html"><img src="./assets/images/foot/icon catalog.svg" alt=""  class="img2_foot"></a>
                     </div>
-                    <a href="#" class="text_foot">Каталог</a>
+                    <a href="index2.html" class="text_foot">Каталог</a>
                 </div>
                 <div class="min_cont_foot">
                     <div class="image_foot">
-                        <a href="index4.html"><img src="./assets/images/foot/icon basket.svg" alt=""  class="img3_foot"></a>
+                        <a href="index4.1.html"><img src="./assets/images/foot/icon basket.svg" alt=""  class="img3_foot"></a>
                     </div>
-                    <a href="#" class="text_foot">Корзина</a>
+                    <a href="index4.1.html" class="text_foot">Корзина</a>
                 </div>
                 <div class="min_cont_foot">
                     <div class="image_foot">
@@ -190,6 +191,10 @@
     <script>
         function smart(){
             window.open("index2.html",'_self');
+        }
+
+        function korzina(){
+            window.open("index4.1.html",'_self');
         }
 
         $(document).ready(function(){

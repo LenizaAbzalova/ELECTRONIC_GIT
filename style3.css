@@ -224,6 +224,30 @@
     height: 540px;
 }
 
+.btn4_sec2:hover{
+    transform: scale(0.90);
+    box-shadow: 0px 0px 10px 3px #ebeaea;
+    transition:all 1s ease;
+}
+
+.btn1_sec2:hover{
+    transform: scale(0.90);
+    box-shadow: 0px 0px 10px 3px #ebeaea;
+    transition:all 1s ease;
+}
+
+.btn2_sec2:hover{
+    transform: scale(0.90);
+    box-shadow: 0px 0px 10px 3px #ebeaea;
+    transition:all 1s ease;
+}
+
+.btn3_sec2:hover{
+    transform: scale(0.90);
+    box-shadow: 0px 0px 10px 3px #ebeaea;
+    transition:all 1s ease;
+}
+
 @media(max-width:1200px){
     /*section2*/
     

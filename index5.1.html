@@ -10,7 +10,7 @@
     <div class="section1">
         <div class="container1_sec1">
             <a href="index.html" class="a1">Главная /</a>
-            <a href="index4.html" class="a1">Корзина /</a>
+            <a href="index4.1.html" class="a1">Корзина /</a>
             <a href="index5.html" class="a2">Оформление заказа</a>
             <p class="text1_sec1">Оформление заказа</p>
         </div>
@@ -18,9 +18,9 @@
     <div class="section2">
         <div class="container1_sec2">
             <div class="input1_sec2">
-                <select name="option1" id="inp1_option1" class="inp1_sec2">
-                    <option value="">Курьер</option>
-                    <option value="petersburg">Самовывоз</option>
+                <select name="option1" id="inp1_option1" class="inp1_sec2" onchange="window.open(this.value, '_blank')">
+                    <option value="index5.1.html">Курьер</option>
+                    <option value="index5.html">Самовывоз</option>
                 </select>
             </div>
             <p class="text1_sec2">Контактные данные</p>
@@ -31,23 +31,23 @@
             </div>
             <p class="text1_sec2">Адрес доставки</p>
             <div class="contact_inputs_sec2">
-                <input type="text" name="" id="inp3" class="inp3_sec2" placeholder="Город*">
-                <input type="text" name="" id="inp4" class="inp3_sec2" placeholder="Улица*">
+                <input type="text" name="" id="inp5" class="inp3_sec2" placeholder="Город*">
+                <input type="text" name="" id="inp6" class="inp3_sec2" placeholder="Улица*">
                 <div class="inputs_dom_ul_sec2">
-                    <input type="text"class="inp33_sec2" placeholder="Дом*">
-                    <input type="text"class="inp33_sec2" placeholder="Квартира*">
+                    <input type="text"class="inp33_sec2" id="inp7" placeholder="Дом*">
+                    <input type="text"class="inp33_sec2" id="inp8" placeholder="Квартира*">
                 </div>
             </div>
             <p class="text1_sec2">Данные по доставке</p>
             <div class="data_dostavki">
                 <p class="text_dat_dost">Дата доставки</p>
                 <div class="cont_data_dost_sec2">
-                    <input type="text"class="inp333_sec2" placeholder="23.08, ср">
-                    <input type="text"class="inp333_sec2" placeholder="01.09, пт">
+                    <input type="text"class="inp333_sec2" id="inp9" placeholder="23.08, ср">
+                    <input type="text"class="inp333_sec2" id="inp10" placeholder="01.09, пт">
                 </div>
                 <p class="text_dat_dost">Время</p>
                 <div class="cont_data_dost_sec2">
-                    <select name="option1" id="inp1_option1" class="inp11_sec2">
+                    <select name="option1" id="inp11" class="inp11_sec2">
                         <option value="">13:00 - 16:00</option>
                         <option value="petersburg">16:00 - 20:00</option>
                     </select>
@@ -87,26 +87,31 @@
                 <p class="text3_sec3">282 978 ₽</p>
             </div>
             <div class="cont_btn_sec3">
-                <button class="btn1_sec3" id="btn1" name="button1_sec3">Оплатить</button>
+                <button class="btn1_sec3" id="btn1" name="button1_sec3" onclick="search()">Оплатить</button>
             </div>
         </div>
     </div>
 </body>
 <script>
-    var address = document.querySelector('.inp2_sec2');
-    var name = document.querySelector('.inp3_sec2');
-    var namber = document.querySelector('.inp3_sec2');
+    function search(){
+        let name=document.getElementById('inp3');
+        let name1=name.value;
+        let namber=document.getElementById('inp4');
+        let namber1=namber.value;
+        let gor=document.getElementById('inp5');
+        let gor1=gor.value;
+        let yl=document.getElementById('inp6');
+        let yl1=yl.value;
+        let dom=document.getElementById('inp7');
+        let dom1=dom.value;
+        let kv=document.getElementById('inp8');
+        let kv1=kv.value;
 
-    address.addEventListener('input', changeBackground);
-    name.addEventListener('input', changeBackground);
-    namber.addEventListener('input', changeBackground);
-
-    function changeBackground() {
-    if (address.value !== '' && name.value !== '' && namber.value !== '') {
-        document.querySelector('button1_sec3').style.background = 'green';
-    } else {
-        document.querySelector('button1_sec3').style.background = 'red';
-    }
+        if(name1 ==="" || namber1 ==="" || gor1 ==="" || yl1 ==="" || dom1 ==="" || kv1 ===""){
+            alert("Поля не заполнены!")
+        }else{
+            window.open("index6.html",'_self');
+        }
     }
 </script>
 </html>
